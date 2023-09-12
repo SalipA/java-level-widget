@@ -1,0 +1,9 @@
+version: '3.1'
+services:
+  level-widget-server:
+    container_name: widget-server
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - TZ=Europe/Moscow
